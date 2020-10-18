@@ -37,17 +37,69 @@
     <script src="" integrity="" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body onload="onLoad();">
+
+    <div class="page">
+        <header>
+            <h1>U.S. ELECTION MAP</h1>
+            <h5>Hover over each state!</h5>
+        </header>
     
-    <!-- SITE CONTENT STARTS HERE -->
-
-    <p>Yo!</p>
-
+        <div class="mapContainer">
+            <canvas id="map_canvas" width="800" height="550"></canvas>
+    
+            <table id="countryResults" >
+                <tbody>
+                    <tr>
+                        <td class="name1">Joe Biden</td>
+                        <td class="name1" id="blueTotalVotes"></td>
+                        <td class="name2">Donald Trump</td>
+                        <td class="name2" id="redTotalVotes"></td>
+                        <th>Winner</th>
+                        <th id="electionWinnerName"></th>
+                    </tr>
+                </tbody>
+            </table><br><br><br>
+    
+            <table id="stateResults">
+                <thead>
+                    <tr>
+                        <th colspan="2">Results by State</th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="name1">Joe Biden</td>
+                        <td class="name1"></td>
+                    </tr>
+                    <tr>
+                        <td class="name2">Donald Trump</td>
+                        <td class="name2"></td>
+                    </tr>
+                    <tr>
+                        <td class="winner">WINNER:</td>
+                        <td class="winner"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br clear="all">
+    
+        <footer>
+            <p>Thanks to <a href="http://dougx.net/map/usmap.html" target="_blank">DougX.net</a> for the map template.</p>
+        </footer>
+    </div>
+    
     <!-- SITE CONTENT ENDS HERE -->
 
     <!-- Scripts -->
     <script src="scripts/vendor/modernizr-3.11.2.min.js"></script>
     <script src="scripts/plugins.js"></script>
+    <script type="text/javascript" src="https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2017/11/map.js"></script>
     <script src="scripts/main.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

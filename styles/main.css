@@ -84,7 +84,104 @@ body {
     max-width: 100%;
 }
 
+.page {
+    width: 80%;
+    max-width: 61.625rem;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #eee;
+}
 
+header {
+    padding: 0.75em 0;
+    font-family: 'Montserrat', serif;
+    font-size: 1rem;
+    text-shadow: 1px 1px #ccc;
+}
+
+.mapContainer {
+    width:800px;
+    margin: 0 auto;
+    position:relative;
+}
+
+canvas {
+    position: relative;
+}
+
+#stateResults {
+    width: 25%;
+    font: 0.75rem/1rem 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #454545;
+    position: absolute;
+    bottom: 0.625rem;
+    right: 0.625rem;
+}
+
+#countryResults {
+    position: absolute;
+    top: 0.625rem;
+    left: 0.625rem;
+    width: 95%;
+    font: 1rem/1.75rem 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #454545;
+}
+
+#stateResults, #countryResults {
+    border-collapse: collapse;
+    background-color: #f2f2f2;
+    -webkit-box-shadow: 1px 1px 1px 1px rgba(204,204,204,0.5);
+    -moz-box-shadow: 1px 1px 1px 1px rgba(204,204,204,0.5);
+    box-shadow: 1px 1px 1px 1px rgba(204,204,204,0.5);
+}
+
+th, td {
+    text-align: left;
+    padding: 0.5rem;
+}
+
+#stateResults th{
+    background-color: #3b3b3b;
+    color: white;
+}
+
+#tableTitle {
+    text-align: center;
+}
+
+#countryResults th {
+    background-color: #888888;
+    color: white;
+}
+
+.name1 {
+background-color: rgb(5, 118, 224);
+color: white;
+}
+
+.name2 {
+    background-color: rgb(211, 54, 6);
+    color: white;
+}
+
+.winner {
+    background-color: #888888;
+    color: white;
+}
+
+footer p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+footer span {
+    color: #f16059;
+    padding: 0 0.3125rem;
+}
+  
+  
 
 /* ==========================================================================
    Helper classes
