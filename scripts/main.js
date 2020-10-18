@@ -5,14 +5,14 @@ class Politician {
         this.stateResults = this.resultGenerator();
         this.totalVotes = this.totalVotesCalculator(this.stateResults);
     }
-    /* For the sake of this practice, the election results are randomly generated between 1 - 10000000
+    /* For the sake of this practice, the election results are randomly generated between 1 - 5500000
     and are pushed to an array.
     The 51 states of USA are ordered alphabetically and are represented by each index:
     [0] as Alabama, [1] as Alaska, ..., [50] as Wyoming. */
     resultGenerator() {
         var resultArray = [];
         for (var i = 0; i <= 50; i++) {
-            resultArray[i] = Math.round(Math.random() * (10000000 - 1) + 1);
+            resultArray[i] = Math.round(Math.random() * (5500000 - 1) + 1);
         }
         return resultArray;
     }
@@ -82,8 +82,8 @@ function setStateResults(state) {
         theStates[state].rgbColor = [11, 32, 57];
     }
 
-    tHead.children[1].children[0].innerText = theStates[state].nameFull;
-    tHead.children[1].children[1].innerText = theStates[state].nameAbbrev;
+    tHead.children[0].children[0].innerText = theStates[state].nameFull;
+    tHead.children[0].children[1].innerText = theStates[state].nameAbbrev;
     tBody.children[0].children[1].innerText = blueCandidate.stateResults[state].toLocaleString();
     tBody.children[1].children[1].innerText = redCandidate.stateResults[state].toLocaleString();
     tBody.children[2].children[1].innerText = stateWinner.name;

@@ -41,53 +41,66 @@
 
     <div class="page">
         <header>
-            <h1>U.S. ELECTION MAP</h1>
-            <h5>Hover over each state!</h5>
+            <h1><span>USA</span> ELECTION MAP</h1>
+            <h3>Tap or hover over each state.</h3>
         </header>
     
         <div class="mapContainer">
-            <canvas id="map_canvas" width="800" height="550"></canvas>
-    
-            <table id="countryResults" >
-                <tbody>
-                    <tr>
-                        <td class="name1">Joe Biden</td>
-                        <td class="name1" id="blueTotalVotes"></td>
-                        <td class="name2">Donald Trump</td>
-                        <td class="name2" id="redTotalVotes"></td>
-                        <th>Winner</th>
-                        <th id="electionWinnerName"></th>
-                    </tr>
-                </tbody>
-            </table><br><br><br>
-    
+            <!-- Table 1: Final results for the entire election -->
+            <div id="countryResults" > 
+                <div>
+                    <table>
+                        <tr>
+                            <td class="blueCandidate">Joe Biden</td>
+                            <td class="blueCandidate" id="blueTotalVotes"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                   <table>
+                        <tr>
+                            <td class="redCandidate">Donald Trump</td>
+                            <td class="redCandidate" id="redTotalVotes"></td>
+                        </tr>
+                   </table>
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <th class="winner">Election Winner</th>
+                            <th id="electionWinnerName"></th>
+                        </tr>
+                    </table>
+                </div>  
+            </div>
+
+            <!-- Table 2: Election map -->
+            <canvas id="map_canvas" width="800" height="550"></canvas><br><br>
+
+            <!-- Table 3: Final results for by each state -->
             <table id="stateResults">
                 <thead>
                     <tr>
-                        <th colspan="2">Results by State</th>
-                    </tr>
-                    <tr>
-                        <th></th>
-                        <th></th>
+                        <th>State</th>
+                        <th>Abbr.</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="name1">Joe Biden</td>
-                        <td class="name1"></td>
+                        <td class="blueCandidate">Joe Biden</td>
+                        <td class="blueCandidate"></td>
                     </tr>
                     <tr>
-                        <td class="name2">Donald Trump</td>
-                        <td class="name2"></td>
+                        <td class="redCandidate">Donald Trump</td>
+                        <td class="redCandidate"></td>
                     </tr>
                     <tr>
-                        <td class="winner">WINNER:</td>
+                        <td class="winner">State Winner</td>
                         <td class="winner"></td>
                     </tr>
                 </tbody>
             </table>
-        </div>
-        <br clear="all">
+        </div><br clear="all">
     
         <footer>
             <p>Thanks to <a href="http://dougx.net/map/usmap.html" target="_blank">DougX.net</a> for the map template.</p>

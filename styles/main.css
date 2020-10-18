@@ -68,6 +68,7 @@ textarea {
 
 * {
     box-sizing: border-box;
+    font-family: Helvetica;
 }
 
 html {
@@ -76,6 +77,7 @@ html {
     max-width: 100%;
     font-size: 1em;
     line-height: 1.4;
+    background-color: #eee;
 }
 
 body {
@@ -85,104 +87,114 @@ body {
 }
 
 .page {
-    width: 80%;
-    max-width: 61.625rem;
-    margin: 0 auto;
-    text-align: left;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     background-color: #eee;
 }
 
 header {
-    padding: 0.75em 0;
-    font-family: 'Montserrat', serif;
-    font-size: 1rem;
-    text-shadow: 1px 1px #ccc;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0 3rem 0;
+}
+
+h1, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+h1 span {
+    background: linear-gradient(to bottom left, rgb(5, 118, 224) 50%, rgb(211, 54, 6) 30%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .mapContainer {
-    width:800px;
-    margin: 0 auto;
-    position:relative;
-}
-
-canvas {
-    position: relative;
-}
-
-#stateResults {
-    width: 25%;
-    font: 0.75rem/1rem 'Open Sans', Helvetica, Arial, sans-serif;
-    color: #454545;
-    position: absolute;
-    bottom: 0.625rem;
-    right: 0.625rem;
-}
-
-#countryResults {
-    position: absolute;
-    top: 0.625rem;
-    left: 0.625rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
     width: 95%;
-    font: 1rem/1.75rem 'Open Sans', Helvetica, Arial, sans-serif;
-    color: #454545;
 }
 
-#stateResults, #countryResults {
-    border-collapse: collapse;
-    background-color: #f2f2f2;
-    -webkit-box-shadow: 1px 1px 1px 1px rgba(204,204,204,0.5);
-    -moz-box-shadow: 1px 1px 1px 1px rgba(204,204,204,0.5);
-    box-shadow: 1px 1px 1px 1px rgba(204,204,204,0.5);
+/* Tables 1 & 2 */
+#countryResults {
+    display: flex;
+    flex-flow: nowrap column;
+    width: 100%;
+}
+
+#countryResults div {
+    width: 100%;
+}
+
+#countryResults table {
+    width: 100%;
+    margin: auto;
+}
+
+#countryResults td,
+#countryResults th,
+#stateResults td,
+#stateResults th  {
+    padding: 0.5rem;
+    width: 50%;
 }
 
 th, td {
-    text-align: left;
-    padding: 0.5rem;
+    text-align: center;
+    color: white;
+}
+
+.blueCandidate {
+    background-color: rgb(5, 118, 224);
+}
+
+.redCandidate {
+    background-color: rgb(211, 54, 6);
+}
+
+#electionWinnerName,
+.winner {
+    background-color: #888888;
+}
+
+#stateResults {
+    width: 70%;
 }
 
 #stateResults th{
     background-color: #3b3b3b;
-    color: white;
 }
 
-#tableTitle {
-    text-align: center;
+/* Table 2: Election map */
+canvas {
+    width: 95%;
 }
 
-#countryResults th {
-    background-color: #888888;
-    color: white;
-}
-
-.name1 {
-background-color: rgb(5, 118, 224);
-color: white;
-}
-
-.name2 {
-    background-color: rgb(211, 54, 6);
-    color: white;
-}
-
-.winner {
-    background-color: #888888;
-    color: white;
-}
-
+/* Footer */
 footer p {
-    font-family: "Montserrat", sans-serif;
     font-size: 0.75rem;
     text-align: center;
     text-transform: uppercase;
 }
 
-footer span {
-    color: #f16059;
-    padding: 0 0.3125rem;
+footer a {
+    text-decoration: none;
+    background: linear-gradient(to bottom left, rgb(5, 118, 224) 50%, rgb(211, 54, 6) 30%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
   
-  
-
 /* ==========================================================================
    Helper classes
 ========================================================================== */
