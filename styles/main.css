@@ -84,6 +84,7 @@ body {
     margin: 0;
     padding: 0;
     max-width: 100%;
+    overflow-x: hidden;
 }
 
 .page {
@@ -128,6 +129,7 @@ h1 span {
 #countryResults {
     display: flex;
     flex-flow: nowrap column;
+    margin: auto;
     width: 100%;
 }
 
@@ -177,6 +179,7 @@ th, td {
 /* Table 2: Election map */
 canvas {
     width: 95%;
+    margin: auto;
 }
 
 /* Footer */
@@ -195,6 +198,65 @@ footer a {
     -webkit-text-fill-color: transparent;
 }
   
+@media only screen and (min-width: 700px) {
+    .mapContainer {
+        align-items: flex-end;
+    }
+
+    #countryResults {
+        width: 60%;
+    }
+
+    canvas {
+        width: 90%;
+    }
+
+    #stateResults {
+        position: absolute;
+        right: 3%;
+        bottom: 3%;
+        max-width: 35vw;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    #stateResults {
+        position: absolute;
+        right: 3%;
+        top: 89%;
+        max-width: 35vw;
+    }
+
+    footer {
+        margin-top: 8%;
+    }
+}
+@media only screen and (min-width: 950px) {
+    #countryResults {
+        width: 100%;
+    }
+
+    #countryResults {
+        flex-direction: row;
+    }
+
+    canvas {
+        width: 75%;
+    }
+
+    #stateResults {
+        position: absolute;
+        right: 3%;
+        top: 70%;
+    }
+
+    footer {
+        margin-top: 10%;
+    }
+    
+}
+
+
 /* ==========================================================================
    Helper classes
 ========================================================================== */
