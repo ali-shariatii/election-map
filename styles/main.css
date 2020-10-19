@@ -118,12 +118,12 @@ h1 span {
 }
 
 .mapContainer {
+    position: relative;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     width: 95%;
-
 }
 
 /* Tables 1 & 2 */
@@ -232,18 +232,18 @@ footer a {
         justify-content: center;
         width: 90vw;
         max-width: 56.25rem;
+        margin-bottom: 2rem;
     }
-    
+
     #stateResults {
         position: absolute;
-        width: 33vw;
-        max-width: 21.875rem;
-        right: 2.5vw;
-        bottom: 2.5vw;
+        width: 21.875rem;
+        right: 0;
+        bottom: 0;
     }
 
     footer {
-        margin-top: 3rem;
+        margin-top: 0.5rem;
     }
 }
 
