@@ -42,7 +42,8 @@
     <div class="page">
         <header>
             <h1><span>USA</span> ELECTION MAP</h1>
-            <h3>Tap or hover over each state.</h3>
+            <h4>Swipe left or right to view the entire map.</h4>
+            <h4>Tap or hover over each state to see its results.</h4>
         </header>
     
         <div class="mapContainer">
@@ -75,7 +76,9 @@
             </div>
 
             <!-- Table 2: Election map -->
-            <canvas id="map_canvas" width="800" height="550"></canvas>
+            <div id="mapWrapper">
+                <canvas id="map_canvas" width="800" height="550"></canvas>
+            </div>
 
             <!-- Table 3: Final results for by each state -->
             <table id="stateResults">

@@ -104,7 +104,7 @@ header {
     padding: 3rem 0 3rem 0;
 }
 
-h1, h3 {
+h1, h4 {
     margin: 0;
     padding: 0;
 }
@@ -123,6 +123,7 @@ h1 span {
     justify-content: center;
     align-items: center;
     width: 95%;
+
 }
 
 /* Tables 1 & 2 */
@@ -131,6 +132,7 @@ h1 span {
     flex-flow: nowrap column;
     margin: auto;
     width: 100%;
+    z-index: 1;
 }
 
 #countryResults div {
@@ -169,7 +171,8 @@ th, td {
 }
 
 #stateResults {
-    width: 70%;
+    width: 100%;
+    margin: 1rem auto 1rem auto;
 }
 
 #stateResults th{
@@ -177,12 +180,19 @@ th, td {
 }
 
 /* Table 2: Election map */
-canvas {
-    width: 95%;
-    margin: auto;
+#mapWrapper {
+    width: 100%;
+    margin: -4rem auto 1rem auto;
+    z-index: 0;
+    overflow-x: auto;
 }
 
 /* Footer */
+footer {
+    bottom: 0;
+    width: 100%;
+}
+
 footer p {
     font-size: 0.75rem;
     text-align: center;
@@ -198,62 +208,43 @@ footer a {
     -webkit-text-fill-color: transparent;
 }
   
-@media only screen and (min-width: 700px) {
-    .mapContainer {
-        align-items: flex-end;
+@media only screen and (min-width: 768px) {
+    #countryResults,
+    #stateResults {
+        width: 50%;
     }
 
-    #countryResults {
-        width: 60%;
-    }
-
-    canvas {
+    #mapWrapper {
         width: 90%;
-    }
-
-    #stateResults {
-        position: absolute;
-        right: 3%;
-        bottom: 3%;
-        max-width: 35vw;
+        margin: -5rem auto 0.5rem auto;
     }
 }
 
-@media only screen and (min-width: 850px) {
-    #stateResults {
-        position: absolute;
-        right: 3%;
-        top: 89%;
-        max-width: 35vw;
-    }
-
-    footer {
-        margin-top: 8%;
-    }
-}
-@media only screen and (min-width: 950px) {
-    #countryResults {
-        width: 100%;
-    }
-
+@media only screen and (min-width: 1000px) {
     #countryResults {
         flex-direction: row;
+        width: 90vw;
+        max-width: 56.25rem;
     }
 
-    canvas {
-        width: 75%;
+    #mapWrapper {
+        display: flex;
+        justify-content: center;
+        width: 90vw;
+        max-width: 56.25rem;
     }
-
+    
     #stateResults {
         position: absolute;
-        right: 3%;
-        top: 70%;
+        width: 33vw;
+        max-width: 21.875rem;
+        right: 2.5vw;
+        bottom: 2.5vw;
     }
 
     footer {
-        margin-top: 10%;
+        margin-top: 3rem;
     }
-    
 }
 
 
