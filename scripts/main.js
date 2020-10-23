@@ -10,15 +10,15 @@ class Politician {
     The 51 states of USA are ordered alphabetically and are represented by each index:
     [0] as Alabama, [1] as Alaska, ..., [50] as Wyoming. */
     resultGenerator() {
-        var resultArray = [];
-        for (var i = 0; i <= 50; i++) {
+        let resultArray = [];
+        for (let i = 0; i <= 50; i++) {
             resultArray[i] = Math.round(Math.random() * (3500000 - 1) + 1);
         }
         return resultArray;
     }
     totalVotesCalculator(input) {
-        var total = 0;
-        for (var i = 0; i < input.length; i++) {
+        let total = 0;
+        for (let i = 0; i < input.length; i++) {
             total += input[i];
             if (i === input.length - 1) {
                 return total;
@@ -28,7 +28,7 @@ class Politician {
 }
 
 // The two candidates are created with one argument using the above constructor.
-var blueCandidate = new Politician("Joe Biden", [5, 118, 224]),
+let blueCandidate = new Politician("Joe Biden", [5, 118, 224]),
     redCandidate = new Politician("Donald Trump", [211, 54, 6]);
 
 // Some of the states have miscounted the results. The new results are assigned (Numbers are generated randomly, even the index numbers.):
@@ -43,9 +43,9 @@ redCandidate.stateResults[ Math.round( Math.random() * 50 ) ] = Math.ceil( Math.
 document.getElementById("blueTotalVotes").innerText = blueCandidate.totalVotes.toLocaleString();
 document.getElementById("redTotalVotes").innerText = redCandidate.totalVotes.toLocaleString();
 
-var electionWinnerName = document.getElementById("electionWinnerName");
+let electionWinnerName = document.getElementById("electionWinnerName");
 
-function declareElectionWinner(input) {
+((input) => {
     switch(true) {
         case (blueCandidate.totalVotes > redCandidate.totalVotes) :
             input.innerText = blueCandidate.name;
@@ -56,21 +56,21 @@ function declareElectionWinner(input) {
         default :
             input.innerText = "Draw Election";
     }
-}
+})(electionWinnerName);
 
-declareElectionWinner(electionWinnerName);
+//declareElectionWinner(electionWinnerName);
 
 /* The purpose is to change each state color to the winner's party color on mouse over.
 So I needed to get access to the background color of each state object.
 Next stage was to use DOM to display state results on mouseover. */
-function setStateResults(state) {
+let setStateResults = (state) => {
     if (blueCandidate.stateResults[state] > redCandidate.stateResults[0]) {
         theStates[state].winner = blueCandidate;
     }else if(blueCandidate.stateResults[state] < redCandidate.stateResults[0]) {
         theStates[state].winner = redCandidate;
     }
 
-    var stateWinner = theStates[state].winner,
+    let stateWinner = theStates[state].winner,
         stateResults = document.getElementById("stateResults"),
         tHead = stateResults.children[0],
         tBody = stateResults.children[1];
@@ -87,6 +87,8 @@ function setStateResults(state) {
     tBody.children[0].children[1].innerText = blueCandidate.stateResults[state].toLocaleString();
     tBody.children[1].children[1].innerText = redCandidate.stateResults[state].toLocaleString();
     tBody.children[2].children[1].innerText = stateWinner.name;
-}
+};
+
+setStateResults();
 
 
