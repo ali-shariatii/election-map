@@ -220,7 +220,7 @@ footer a {
     }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 992px) {
     #countryResults {
         flex-direction: row;
         width: 90vw;
