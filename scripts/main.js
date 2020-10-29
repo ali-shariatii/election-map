@@ -5,7 +5,7 @@ class Politician {
         this.stateResults = this.resultGenerator();
         this.totalVotes = this.totalVotesCalculator(this.stateResults);
     }
-    /* For the sake of this practice, the election results are randomly generated between 1 - 3500000
+    /* For the sake of this practice, the election results are randomly generated between 1 - 3,500,000
     and are pushed to an array.
     The 51 states of USA are ordered alphabetically and are represented by each index:
     [0] as Alabama, [1] as Alaska, ..., [50] as Wyoming. */
@@ -32,12 +32,12 @@ let blueCandidate = new Politician("Joe Biden", [5, 118, 224]),
     redCandidate = new Politician("Donald Trump", [211, 54, 6]);
 
 // Some of the states have miscounted the results. The new results are assigned (Numbers are generated randomly, even the index numbers.):
-blueCandidate.stateResults[ Math.round( Math.random() * 50 ) ] = Math.floor( Math.random() * (10000000 - 1) + 1 );
-blueCandidate.stateResults[ Math.round( Math.random() * 50 ) ] = Math.ceil( Math.random() * (10000000 - 1) + 1 );
-blueCandidate.stateResults[ Math.round( Math.random() * 50 ) ] = Math.floor( Math.random() * (10000000 - 1) + 1 );
-redCandidate.stateResults[ Math.round( Math.random() * 50 ) ] = Math.ceil( Math.random() * (10000000 - 1) + 1 );
-redCandidate.stateResults[ Math.round( Math.random() * 50 ) ] = Math.floor( Math.random() * (10000000 - 1) + 1 );
-redCandidate.stateResults[ Math.round( Math.random() * 50 ) ] = Math.ceil( Math.random() * (10000000 - 1) + 1 );
+//blueCandidate.stateResults[ Math.round( Math.random() * 50 ) ] = Math.floor( Math.random() * (10000000 - 1) + 1 );
+//blueCandidate.stateResults[ Math.round( Math.random() * 50 ) ] = Math.ceil( Math.random() * (10000000 - 1) + 1 );
+//blueCandidate.stateResults[ Math.round( Math.random() * 50 ) ] = Math.floor( Math.random() * (10000000 - 1) + 1 );
+//redCandidate.stateResults[ Math.round( Math.random() * 50 ) ] = Math.ceil( Math.random() * (10000000 - 1) + 1 );
+//redCandidate.stateResults[ Math.round( Math.random() * 50 ) ] = Math.floor( Math.random() * (10000000 - 1) + 1 );
+//redCandidate.stateResults[ Math.round( Math.random() * 50 ) ] = Math.ceil( Math.random() * (10000000 - 1) + 1 );
 
 // Comparing the two candidates and declaring the winner and the total votes
 document.getElementById("blueTotalVotes").innerText = blueCandidate.totalVotes.toLocaleString();
@@ -58,15 +58,13 @@ let electionWinnerName = document.getElementById("electionWinnerName");
     }
 })(electionWinnerName);
 
-//declareElectionWinner(electionWinnerName);
-
 /* The purpose is to change each state color to the winner's party color on mouse over.
 So I needed to get access to the background color of each state object.
 Next stage was to use DOM to display state results on mouseover. */
 let setStateResults = (state) => {
-    if (blueCandidate.stateResults[state] > redCandidate.stateResults[0]) {
+    if (blueCandidate.stateResults[state] > redCandidate.stateResults[state]) {
         theStates[state].winner = blueCandidate;
-    }else if(blueCandidate.stateResults[state] < redCandidate.stateResults[0]) {
+    }else if(blueCandidate.stateResults[state] < redCandidate.stateResults[state]) {
         theStates[state].winner = redCandidate;
     }
 
