@@ -54,7 +54,7 @@ let electionWinnerName = document.getElementById("electionWinnerName");
             input.innerText = redCandidate.name;
             break;
         default :
-            input.innerText = "Draw Election";
+            input.innerText = `Draw Election`;
     }
 })(electionWinnerName);
 
@@ -75,7 +75,7 @@ let setStateResults = (state) => {
 
     if (stateWinner !== null) {
         theStates[state].rgbColor = stateWinner.partyColor;
-        tBody.children[2].children[1].innerText = "Draw";
+        tBody.children[2].children[1].innerText = `Draw`;
     }else{
         theStates[state].rgbColor = [11, 32, 57];
     }
