@@ -1,6 +1,5 @@
 # Election Map App
 
-
 <!-- table of content -->
 ## Table of Content
 
@@ -12,19 +11,16 @@
 * [Contribution Rules](#contribution-rules)
 * [Contact](#contact)
 
----
 <!-- about -->
 ## About the Project
 
 An interactive and responsive web app which generates & displays total & provincial election result using the DOM & a third-party map template.
 
----
 <!-- live version -->
 ## Live Version
 
 Check out the live version [here](https://ali-shariatii.github.io/election-map/).
 
----
 <!-- built -->
 ## Built with
 
@@ -39,11 +35,10 @@ Check out the live version [here](https://ali-shariatii.github.io/election-map/)
 * Responsive Styling
 * Interactive Coding
 
----
 <!-- prerequisites -->
 ## Prerequisites
 
-Minimum recommended technical knowledge prior to viewing the source code or rebuilding the project:
+Minimum recommended technical knowledge prior to rebuilding the project:
 
 * HTML
     * basic knowledge
@@ -73,7 +68,6 @@ Minimum recommended technical knowledge prior to viewing the source code or rebu
 * Extras
     * Getting comfortable with reading and understanding third-party codes
 
----
 <!-- new releases -->
 ## Next Releases
 
@@ -83,7 +77,6 @@ Minimum recommended technical knowledge prior to viewing the source code or rebu
     * hover and click effect for touch devices
     * using css variables 
 
----
 <!-- contribution -->
 ## Contribution Rules
 
@@ -91,7 +84,6 @@ Minimum recommended technical knowledge prior to viewing the source code or rebu
 * The project indentation is set to 4 spaces.
 * Have fun and let me know of any suggestion for improvement.
 
----
 <!-- contact -->
 ## Contact
 
