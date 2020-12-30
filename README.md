@@ -1,81 +1,103 @@
-# Project Title
-
-<!-- links -->
-<link rel="stylesheet" href="styles/readme.css">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+# Election Map App
 
 
 <!-- table of content -->
-<h2>Table of Content</h2>
+## Table of Content
 
-<div class="table-content main-section">
-    <ul>
-        <li><a href="#about">About the Project</a></li>
-        <li><a href="#live-version">Live Version</a></li>
-        <li><a href="#built-with">Built with</a></li>
-        <li><a href="#contribution-rules">Contribution Rules</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</div>
+* [About the Project](#about-the-project)
+* [Live Version](#live-version)
+* [Built with](#built-with)
+* [Prerequisites](#prerequisites)
+* [Next Releases](#next-releases)
+* [Contribution Rules](#contribution-rules)
+* [Contact](#contact)
 
-<hr>
+---
 <!-- about -->
-<h2 id="about">About the Project</h2>
+## About the Project
 
-<div class="about-content main-section">
-    <p></p>
-</div>
+An interactive and responsive web app which generates & displays total & provincial election result using the DOM & a third-party map template.
 
-<hr>
+---
 <!-- live version -->
-<h2 id="live-version">Live Version</h2>
+## Live Version
 
-<div class="live-version-content main-section">
-<p>Check out the live version <a href="">here</a>.</p>
-</div>
+Check out the live version [here](https://ali-shariatii.github.io/election-map/).
 
-<hr>
+---
 <!-- built -->
-<h2 id="built-with">Built with</h2>
+## Built with
 
-<div class="built-with-content main-section">
-    <ul>
-        <li></li>
-    </ul>
-</div>
+* JavaScript
+* HTML
+* CSS
+* Git
+* GitHub
+* Terminal
+* Chrome DevTool
+* Firefox DevTool
+* Responsive Styling
+* Interactive Coding
 
-<hr>
+---
+<!-- prerequisites -->
+## Prerequisites
+
+Minimum recommended technical knowledge prior to viewing the source code or rebuilding the project:
+
+* HTML
+    * basic knowledge
+    * viewport meta tag
+    * linking external css & js files including third-party files
+    * table element
+* CSS
+    * basic knowledge
+    * -webkit & -moz
+    * position & display properties
+    * responsive css units
+    * media queries
+* JavaScript
+    * DOM & DOM methods
+    * arrow functions
+    * JS classes
+    * class constructors & methods
+    * this, return & let keywords
+    * if statement
+    * switch
+    * for loop
+    * Math object & Math object methods
+* Chrome DevTool
+    * console
+    * sources
+    * toggle device toolbar
+* Extras
+    * Getting comfortable with reading and understanding third-party codes
+
+---
+<!-- new releases -->
+## Next Releases
+
+* v2.0
+    * moving inline onload function from the body tag to the main.js file
+    * replacing color names with political names
+    * hover and click effect for touch devices
+    * using css variables 
+
+---
 <!-- contribution -->
-<h2 id="contribution-rules">Contribution Rules</h2>
+## Contribution Rules
 
-<div class="contribution-rules-content main-section">
-    <ul>
-        <li>Before a pull request, please run cross-browsing tests first and make sure the changes have not created any bug.</li>
-        <li>The project indentation is set to 4 spaces.</li>
-        <li>Have fun and let me know of any suggestion for improvement.</li>
-    </ul>
-</div>
+* Before a pull request, please run cross-browsing tests first and make sure the changes have not created any bug.
+* The project indentation is set to 4 spaces.
+* Have fun and let me know of any suggestion for improvement.
 
-<hr>
+---
 <!-- contact -->
-<h2 id="contact">Contact</h2>
+## Contact
 
-<div class="contact-content main-section">
-    <ul>
-        <li><a href="mailto:a.shariatii91@gmail.com" class="fa fa-envelope"></a></li>
-        <li><a href="https://alishariatii.com/" target="_blank" class="fas fa-globe"></a></li>
-        <li><a href="https://blog.alishariatii.com/" target="_blank" class="fas fa-blog"></a></li>  
-        <li><a href="https://github.com/ali-shariatii/" target="_blank" class="fab fa-github"></a></li>
-        <li><a href="https://www.linkedin.com/in/ali-shariatii/" target="_blank" class="fab fa-linkedin"></a></li>  
-    </ul>
-    <ul>
-        <li><a href="https://dev.to/alishariatii" target="_blank" class="fab fa-dev"></a></li>   
-        <li><a href="https://twitter.com/a_shariatii" target="_blank" class="fab fa-twitter"></a></li>    
-        <li><a href="https://www.youtube.com/channel/UCtMqKuobuxPU_9ZIp8vZXgw" target="_blank" class="fab fa-youtube"></a></li>
-        <li><a href="https://www.instagram.com/web_block/" target="_blank" class="fab fa-instagram"></a></li>    
-        <li><a href="https://www.facebook.com/webblokk" target="_blank" class="fab fa-facebook"></a></li> 
-    </ul>
-</div>
+[Email](mailto:a.shariatii91@gmail.com) | [Portfolio](https://alishariatii.com/) | [Blog](https://blog.alishariatii.com/) | [GitHub](https://github.com/ali-shariatii/) | [LinkedIn](https://www.linkedin.com/in/ali-shariatii/)  
+[Dev.to](https://dev.to/alishariatii) | [Twitter](https://twitter.com/a_shariatii) | [YouTube](https://www.youtube.com/channel/UCtMqKuobuxPU_9ZIp8vZXgw)| [Instagram](https://www.instagram.com/web_block/)  | [Facebook](https://www.facebook.com/webblokk)
+
 
 <!-- 
 Guidelines
