@@ -73,7 +73,7 @@ Minimum recommended technical knowledge prior to rebuilding the project:
 
 * v2.0
     * moving inline onload function from the body tag to the main.js file
-    * replacing color names with political names
+    * replacing political names with color names
     * hover and click effect for touch devices
     * using css variables 
 
