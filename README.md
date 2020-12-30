@@ -76,7 +76,8 @@ Minimum recommended technical knowledge prior to rebuilding the project:
     * replacing political names with color names
     * hover and click effect for touch devices
     * using css variables 
-    * checking flexbox gap property for safari compatibility issue
+    * checking flexbox gap property for safari compatibility issues
+    * visual design control for big screens
 
 <!-- contribution -->
 ## Contribution Rules
