@@ -65,6 +65,7 @@ Minimum recommended technical knowledge prior to rebuilding the project:
     * console
     * sources
     * toggle device toolbar
+    * elements
 * Extras
     * Getting comfortable with reading and understanding third-party codes
 
