@@ -24,7 +24,7 @@ Check out the live version [here](https://ali-shariatii.github.io/election-map/)
 <!-- built -->
 ## Built with
 
-* JavaScript
+* JavaScript & WebAPI
 * HTML
 * CSS
 * Git
@@ -51,7 +51,7 @@ Minimum recommended technical knowledge prior to rebuilding the project:
     * position & display properties
     * responsive css units
     * media queries
-* JavaScript
+* JavaScript & WebAPI
     * DOM & DOM methods
     * arrow functions
     * JS classes
