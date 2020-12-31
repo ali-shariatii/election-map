@@ -79,7 +79,7 @@ Minimum recommended technical knowledge prior to rebuilding the project:
     * hover and click effect for touch devices
     * using css variables 
     * checking flexbox gap property for safari compatibility issues
-    * visual design control for big screens
+    * further quality control for small devices and big screens
 
 <!-- contribution -->
 ## Contribution Rules
