@@ -34,6 +34,7 @@ Check out the live version [here](https://ali-shariatii.github.io/election-map/)
 * Firefox DevTool
 * Responsive Styling
 * Interactive Coding
+* Visual Studio Code
 
 <!-- prerequisites -->
 ## Prerequisites
